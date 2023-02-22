@@ -23,6 +23,7 @@ jobs:
         with:
           channel: 'stable'
           flutter-version: '2.5.x'
+      - run: flutter upgrade
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build apk
@@ -50,6 +51,7 @@ jobs:
         with:
           channel: 'stable'
           flutter-version: '2.5.x'
+      - run: flutter upgrade
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build apk
