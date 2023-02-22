@@ -1,7 +1,7 @@
 name: deployments
 on:
   push:
-    branches: [master]
+    branches: [main, dev]
 
 jobs:
   deployDev:
