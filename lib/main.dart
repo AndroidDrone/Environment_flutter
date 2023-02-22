@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
+  //this command will help to read env file
   await dotenv.load();
   runApp(MyApp());
 }
@@ -40,14 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Text(
           'API_URL: ${dotenv.env['API_URL']}',
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
       ),
     );
   }
 }
-
-
 
 /*Future main() async {
   const environment =
